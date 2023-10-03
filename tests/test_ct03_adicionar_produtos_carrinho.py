@@ -4,6 +4,7 @@ from pages.home_page import HomePage
 from pages.cart_page import CartPage
 
 @pytest.mark.usefixtures("setup_teardown")
+@pytest.mark.carrinho
 class TestCT03:
     def test_ct03_adicionar_produtos_carrinho(self):
         login_page = LoginPage()
